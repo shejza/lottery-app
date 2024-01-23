@@ -36,5 +36,26 @@ The `lottery-react` project is a React application that provides a user interfac
 - `App`: The main component that displays information about the lottery, allows users to enter the lottery, and enables the manager to pick a winner.
 - Other components (e.g., form elements) as needed.
 
-### Project Structure
+### Connecting React App with Smart Contract
 
+The React app uses the `web3` library to connect to the Ethereum blockchain. The `web3` instance is created using the `HDWalletProvider` and is used to deploy the smart contract, fetch contract details, and interact with its functions.
+
+### Deployment Script
+
+The smart contract is deployed using the `HDWalletProvider` and Truffle's `web3` library. The deployment script is found in `lottery` at `deploy.js`.
+
+## How to Use
+
+1. Clone this repository.
+2. Install dependencies for each project (`lottery` and `lottery-react`).
+3. Configure environment variables (e.g., Infura URL, mnemonic phrase) for deploying and interacting with the smart contract.
+4. Deploy the smart contract using the deployment script in `lottery`.
+5. Run the React app using `npm start` in the `lottery-react` project.
+6. Interact with the lottery by entering and picking winners.
+
+Feel free to explore each project's folder for more details.
+
+
+### Acknowledgment
+
+This project was inspired by Stephen Grider's Ethereum and Solidity: The Complete Developer's Guide course on Udemy. The course provided valuable insights into smart contract development on the Ethereum blockchain. While this project shares similarities with the course content, it has been independently developed and customized for learning purposes.
